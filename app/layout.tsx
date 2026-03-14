@@ -3,6 +3,10 @@ import "./globals.css";
 import Footer from "@/content/Footer";
 import Header from "@/content/Header";
 import Providers from "@/providers/provider";
+import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: "Spotify Analytics",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <Providers>
-      <html lang="pt-br">
+      <html lang="pt-br" className={cn("font-sans", inter.variable)}>
         <body className="antialiased min-h-dvh bg-[#191414] flex flex-col">
           <Header />
           {children}

@@ -27,7 +27,7 @@ export default function Header() {
                         <Link
                             key="Home"
                             href="/"
-                            target="_blank"
+                            target="_self"
                             className="hover:text-[#1DB954] transition-colors border-b-2 border-transparent hover:border-[#1DB954] pb-1"
                         >
                             Home
@@ -35,7 +35,7 @@ export default function Header() {
                         <Link
                             key="About"
                             href="/about"
-                            target="_blank"
+                            target="_self"
                             className="hover:text-[#1DB954] transition-colors border-b-2 border-transparent hover:border-[#1DB954] pb-1"
                         >
                             Sobre
@@ -43,7 +43,7 @@ export default function Header() {
                         <Link
                             key="Privacy"
                             href="/privacy-policy"
-                            target="_blank"
+                            target="_self"
                             className="hover:text-[#1DB954] transition-colors border-b-2 border-transparent hover:border-[#1DB954] pb-1"
                         >
                             Privacidade
@@ -51,7 +51,7 @@ export default function Header() {
                         <Link
                             key="Contact"
                             href="/contact"
-                            target="_blank"
+                            target="_self"
                             className="hover:text-[#1DB954] transition-colors border-b-2 border-transparent hover:border-[#1DB954] pb-1"
                         >
                             Contato
@@ -59,7 +59,7 @@ export default function Header() {
                         <Link
                             key="FAQ"
                             href="/faq"
-                            target="_blank"
+                            target="_self"
                             className="hover:text-[#1DB954] transition-colors border-b-2 border-transparent hover:border-[#1DB954] pb-1"
                         >
                             Dúvidas
@@ -69,10 +69,10 @@ export default function Header() {
             </nav>
 
             {/* ELEMENTO DECORATIVO MOBILE */}
-            <div className="md:hidden flex flex-col gap-1.5 items-end">
+            {/* <div className="md:hidden flex flex-col gap-1.5 items-end">
                 <div className="w-8 h-[3px] bg-white"></div>
                 <div className="w-5 h-[3px] bg-[#1DB954]"></div>
-            </div>
+            </div> */}
         </header>
     );
 }

@@ -3,11 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import { toPng } from "html-to-image";
 
-import {
-    getProfile,
-    getTopArtists,
-    getTopTracks
-} from "@/lib/spotify";
+import { getProfile, getTopArtists, getTopTracks } from "@/lib/spotify";
 import { DownloadIcon } from "lucide-react";
 
 export default function SpotifyStoryMinimal({ token }: { token: string }) {

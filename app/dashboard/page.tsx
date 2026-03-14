@@ -6,10 +6,7 @@ import {
     getProfile,
     getTopArtists,
     getRecentTracks,
-    getTopTracks,
-    getPlaylists,
     getNowPlaying,
-    getFollowedArtists
 } from "@/lib/spotify";
 
 import { useQuery } from "@tanstack/react-query";
@@ -193,7 +190,7 @@ export default function Dashboard() {
                             {/* INSIGHT BOX */}
                             <div className="p-6 bg-[#1DB954]/5 border border-[#1DB954]/10 rounded-sm">
                                 <p className="text-xs text-zinc-400 leading-relaxed italic">
-                                    "Sua curadoria atual inclina-se para o <span className="text-white font-medium">foco técnico</span> e ritmos lineares."
+                                    &quot;Sua curadoria atual inclina-se para o <span className="text-white font-medium">foco técnico</span> e ritmos lineares.&quot;
                                 </p>
                             </div>
 
