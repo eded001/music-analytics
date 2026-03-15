@@ -52,7 +52,7 @@ export default function Dashboard() {
     if (isLoading) {
         return (
             <div className="min-h-screen bg-black flex flex-col items-center justify-center gap-4">
-                <div className="w-5 h-5 border-2 border-zinc-800 border-t-[#1DB954] rounded-full animate-spin" />
+                <div className="w-5 h-5 border-2 border-zinc-800 border-t-[#1ED760] rounded-full animate-spin" />
                 <p className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Sincronizando Dados</p>
             </div>
         );
@@ -67,14 +67,14 @@ export default function Dashboard() {
     const progressPct = nowTrack ? (nowPlaying.progress_ms / nowTrack.duration_ms) * 100 : 0;
 
     return (
-        <div className="min-h-screen bg-black text-zinc-400 selection:bg-[#1DB954]/30">
+        <div className="min-h-screen bg-black text-zinc-400 selection:bg-[#1ED760]/30">
             <div className="max-w-5xl mx-auto px-6 py-12 md:py-20">
 
                 {/* ─── HEADER: PROFILE ─── */}
                 <header className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-20">
                     <div className="flex items-center gap-5">
                         <div className="relative group">
-                            <div className="absolute -inset-1 bg-gradient-to-tr from-[#1DB954] to-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition" />
+                            <div className="absolute -inset-1 bg-gradient-to-tr from-[#1ED760] to-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition" />
                             <div className="relative w-16 h-16 rounded-full overflow-hidden border border-zinc-800">
                                 <Image
                                     src={profile?.images?.[0]?.url || "/default-avatar.png"}
@@ -92,7 +92,7 @@ export default function Dashboard() {
 
                     <button
                         onClick={() => router.push("/create")}
-                        className="flex items-center justify-center gap-2 bg-white text-black px-6 py-2.5 rounded-sm font-bold text-[10px] uppercase tracking-widest hover:bg-[#1DB954] transition-all active:scale-95"
+                        className="flex items-center justify-center gap-2 bg-white text-black px-6 py-2.5 rounded-sm font-bold text-[10px] uppercase tracking-widest hover:bg-[#1ED760] transition-all active:scale-95"
                     >
                         Gerar Story Digital
                         <ArrowUpRight size={14} />
@@ -157,8 +157,8 @@ export default function Dashboard() {
                                             </div>
                                             <div className="min-w-0">
                                                 <div className="flex items-center gap-2 mb-2">
-                                                    <span className="flex h-1.5 w-1.5 rounded-full bg-[#1DB954] animate-pulse" />
-                                                    <span className="text-[9px] font-black text-[#1DB954] uppercase tracking-[0.2em]">Live Stream</span>
+                                                    <span className="flex h-1.5 w-1.5 rounded-full bg-[#1ED760] animate-pulse" />
+                                                    <span className="text-[9px] font-black text-[#1ED760] uppercase tracking-[0.2em]">Live Stream</span>
                                                 </div>
                                                 <h3 className="text-lg font-bold text-white leading-tight mb-1">{nowTrack.name}</h3>
                                                 <p className="text-sm text-zinc-500 truncate">{nowTrack.artists.map((a: any) => a.name).join(", ")}</p>
@@ -169,7 +169,7 @@ export default function Dashboard() {
                                         <div className="space-y-2">
                                             <div className="h-[2px] w-full bg-zinc-800">
                                                 <div
-                                                    className="h-full bg-[#1DB954] transition-all duration-1000"
+                                                    className="h-full bg-[#1ED760] transition-all duration-1000"
                                                     style={{ width: `${progressPct}%` }}
                                                 />
                                             </div>
@@ -188,7 +188,7 @@ export default function Dashboard() {
                             </section>
 
                             {/* INSIGHT BOX */}
-                            <div className="p-6 bg-[#1DB954]/5 border border-[#1DB954]/10 rounded-sm">
+                            <div className="p-6 bg-[#1ED760]/5 border border-[#1ED760]/10 rounded-sm">
                                 <p className="text-xs text-zinc-400 leading-relaxed italic">
                                     &quot;Sua curadoria atual inclina-se para o <span className="text-white font-medium">foco técnico</span> e ritmos lineares.&quot;
                                 </p>

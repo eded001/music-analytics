@@ -40,7 +40,7 @@ export default function Home() {
         <div className="max-w-lg mb-12">
           <Paragraph justify="center">
             <span className="text-zinc-400 text-lg md:text-xl font-medium leading-relaxed">
-              Interessado em <b className="text-white">gerar insights</b>, compartilhar descobertas e saber mais sobre você baseado no <b className="text-[#1db954]">seu gosto musical</b>?
+              Interessado em <b className="text-white">gerar insights</b>, compartilhar descobertas e saber mais sobre você baseado no <b className="text-[#1ED760]">seu gosto musical</b>?
             </span>
           </Paragraph>
           <p className="text-zinc-500 mt-4 text-sm font-bold uppercase tracking-widest">
@@ -51,7 +51,7 @@ export default function Home() {
         {/* 3. BOTÃO PREMIUM */}
         <button
           onClick={handleSpotifyLogin}
-          className="group relative flex items-center gap-4 bg-[#1db954] text-black font-black uppercase tracking-tighter text-xl px-10 py-5 rounded-full hover:scale-105 active:scale-95 transition-all shadow-[0_0_30px_rgba(29,185,84,0.3)]"
+          className="group relative flex items-center gap-4 bg-[#1ED760] hover:bg-[#34c065] transition-colors cursor-pointer text-black font-black uppercase tracking-tighter text-xl px-10 py-5 rounded-full"
         >
           <BsSpotify size={28} className="group-hover:rotate-12 transition-transform" />
           Conectar agora

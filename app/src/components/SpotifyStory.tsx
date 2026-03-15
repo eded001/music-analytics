@@ -52,7 +52,7 @@ export default function SpotifyStoryMinimal({ token }: { token: string }) {
             <div
                 ref={ref}
                 className="relative w-[360px] h-[640px] p-8 flex flex-col justify-between overflow-hidden"
-                style={{ backgroundColor: '#FF5757', color: '#000000' }} // Fundo Vermelho Vibrante
+                style={{ backgroundColor: '#FF5757', color: '#121212' }} // Fundo Vermelho Vibrante
             >
                 {/* Elemento Geométrico de Fundo */}
                 <div className="absolute -top-10 -left-10 w-40 h-40 border-[20px] border-black/5 rounded-full" />
@@ -126,7 +126,7 @@ export default function SpotifyStoryMinimal({ token }: { token: string }) {
             {/* BOTÃO */}
             <button
                 onClick={download}
-                className="bg-[#1db954] rounded-2xl flex items-center font-medium text-xl p-2 gap-2 hover:cursor-pointer hover:bg-[#1aa74c] active:bg-[#179443]"
+                className="bg-[#1ED760] rounded-2xl flex items-center font-medium text-xl p-2 gap-2 hover:cursor-pointer hover:bg-[#1aa74c] active:bg-[#179443]"
             >
                 Baixar
                 <DownloadIcon />
