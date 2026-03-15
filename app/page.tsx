@@ -28,10 +28,8 @@ export default function Home() {
 
   return (
     <main className="relative flex flex-1 flex-col items-center justify-center px-6 overflow-hidden min-h-screen">
-      {/* 1. ELEMENTOS DECORATIVOS DE FUNDO */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-[#1db954] opacity-[0.05] blur-[120px] rounded-full -z-10" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-125 h-125 bg-[#1ED760] opacity-[0.05] blur-[120px] rounded-full -z-10" />
 
-      {/* 2. CONTEÚDO EDITORIAL */}
       <div className="max-w-4xl text-center flex flex-col items-center">
         <h1 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-8 italic">
           CRIE SEU <br />
@@ -49,16 +47,12 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 3. BOTÃO PREMIUM */}
         <button
           onClick={handleSpotifyLogin}
           className="group relative flex items-center gap-4 bg-[#1ED760] hover:bg-[#34c065] transition-colors cursor-pointer text-black font-black uppercase tracking-tighter text-xl px-10 py-5 rounded-full"
         >
-          <BsSpotify size={28} className="group-hover:rotate-12 transition-transform" />
+          <BsSpotify size={28} />
           Conectar agora
-
-          {/* Efeito de brilho no hover */}
-          <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity" />
         </button>
       </div>
     </main>
