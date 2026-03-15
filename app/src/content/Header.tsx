@@ -17,7 +17,7 @@ export default function Header() {
             <div className="flex items-center gap-4 group cursor-default">
                 <h1 className="text-xl md:text-2xl font-black text-white uppercase tracking-tighter italic whitespace-nowrap">
                     <Link href="/" target="_self">
-                        Spotify<span className="text-[#1ED760]">Analytics</span>
+                        Music<span className="text-[#1ED760]">Analytics</span>
                     </Link>
                 </h1>
 

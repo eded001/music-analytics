@@ -15,7 +15,7 @@ export default function FAQ() {
                     <h3 className="text-white font-medium text-lg mb-3 tracking-tight">Disponibilidade do Código-Fonte</h3>
                     <p className="text-zinc-400 text-sm leading-relaxed">
                         O repositório oficial é público e pode ser auditado no GitHub através do endereço:
-                        <a href="https://github.com/eded001/spotify-analytics" target="_blank" className="text-[#1ED760] ml-1 hover:underline">eded001/spotify-analytics</a>.
+                        <a href="https://github.com/eded001/music-analytics" target="_blank" className="text-[#1ED760] ml-1 hover:underline">eded001/music-analytics</a>.
                     </p>
                 </section>
 

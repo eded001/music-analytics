@@ -28,7 +28,7 @@ export default function Menu() {
                     <div className="flex items-start justify-between border-b border-white/10 pb-6">
                         <div>
                             <h1 className="text-lg font-black text-white uppercase tracking-tight italic">
-                                Spotify<span className="text-[#1ED760]">Analytics</span>
+                                Music<span className="text-[#1ED760]">Analytics</span>
                             </h1>
 
                             <p className="text-[9px] font-black uppercase tracking-[0.3em] text-zinc-500 mt-2">

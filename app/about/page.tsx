@@ -14,7 +14,7 @@ export default function About() {
             <Article variant="grid">
                 <Section>
                     <p className="text-zinc-300 leading-relaxed">
-                        O <span className="text-white font-medium">Spotify Analytics</span> é uma plataforma de visualização de dados musicais projetada para converter métricas de streaming em insights visuais. Inspirado pelo Receiptify, o sistema expande a análise de consumo para oferecer uma interface clara e minimalista.
+                        O <span className="text-white font-medium">Music Analytics</span> é uma plataforma de visualização de dados musicais projetada para converter métricas de streaming em insights visuais. Inspirado pelo Receiptify, o sistema expande a análise de consumo para oferecer uma interface clara e minimalista.
                     </p>
                 </Section>
 
