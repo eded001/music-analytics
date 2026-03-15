@@ -5,6 +5,7 @@ import { toPng } from "html-to-image";
 
 import { getProfile, getTopArtists, getTopTracks } from "@/lib/spotify";
 import { DownloadIcon } from "lucide-react";
+import { Button } from "@/components/ui/MyButton";
 
 export default function SpotifyStoryMinimal({ token }: { token: string }) {
     const ref = useRef<HTMLDivElement>(null);
@@ -123,14 +124,12 @@ export default function SpotifyStoryMinimal({ token }: { token: string }) {
                 </div>
             </div>
 
-            {/* BOTÃO */}
-            <button
+            <Button
                 onClick={download}
-                className="bg-[#1ED760] rounded-2xl flex items-center font-medium text-xl p-2 gap-2 hover:cursor-pointer hover:bg-[#1aa74c] active:bg-[#179443]"
             >
                 Baixar
                 <DownloadIcon />
-            </button>
+            </Button>
         </div>
     );
 }
