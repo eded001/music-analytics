@@ -128,7 +128,6 @@ export default function SpotifyStoryMinimal({ token }: { token: string }) {
                 onClick={download}
             >
                 Baixar
-                <DownloadIcon />
             </Button>
         </div>
     );
