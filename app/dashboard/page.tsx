@@ -2,16 +2,11 @@
 
 export const dynamic = "force-dynamic";
 
-import {
-    getProfile,
-    getTopArtists,
-    getRecentTracks,
-    getNowPlaying,
-} from "@/lib/spotify";
+import { getProfile, getTopArtists, getRecentTracks, getNowPlaying, } from "@/lib/spotify";
 
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
-import { Play, Music2, ArrowUpRight } from "lucide-react";
+import { Music2, ArrowUpRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 // ─── Componentes de UI (Semânticos) ──────────────────────────────────────────
@@ -78,7 +73,7 @@ export default function Dashboard() {
                 <header className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-20">
                     <div className="flex items-center gap-5">
                         <div className="relative group">
-                            <div className="absolute -inset-1 bg-gradient-to-tr from-[#1ED760] to-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition" />
+                            <div className="absolute -inset-1 bg-linear-to-tr from-[#1ED760] to-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition" />
                             <div className="relative w-16 h-16 rounded-full overflow-hidden border border-zinc-800">
                                 <Image
                                     src={profile?.images?.[0]?.url || "/default-avatar.png"}

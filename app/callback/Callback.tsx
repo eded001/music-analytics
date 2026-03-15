@@ -7,7 +7,6 @@ import Paragraph from "@/components/Paragraph";
 import Title from "@/components/Title";
 
 export default function Callback() {
-
     const params = useSearchParams();
 
     useEffect(() => {
