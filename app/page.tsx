@@ -10,7 +10,8 @@ export default function Home() {
     const scope = [
       "user-read-email",
       "user-top-read",
-      "user-read-recently-played"
+      "user-read-recently-played",
+      "user-read-playback-state"
     ].join(" ");
     const responseType = "code";
 

@@ -71,11 +71,11 @@ async function getPlaylists(token: string) {
 }
 
 async function getNowPlaying(token: string) {
-    console.log("[Spotify] GET /me/player/currently-playing");
+    console.log("[Spotify] GET /me/player");
 
-    const res = await fetch(`${BASE}/me/player/currently-playing`, { headers: headers(token) });
+    const res = await fetch(`${BASE}/me/player`, { headers: headers(token) });
 
-    console.log("[Spotify] /currently-playing status:", res.status);
+    console.log("[Spotify] /me/player status:", res.status);
 
     if (res.status === 204) {
         console.log("[Spotify] Nothing is currently playing");
@@ -83,7 +83,7 @@ async function getNowPlaying(token: string) {
     }
 
     const data = await res.json();
-    console.log("[Spotify] /currently-playing response:", data);
+    console.log("[Spotify] /me/player response:", data);
 
     return data;
 }

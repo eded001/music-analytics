@@ -63,8 +63,12 @@ export default function Dashboard() {
     const recentTracks = recentQuery.data;
     const nowPlaying = nowPlayingQuery.data;
 
-    const nowTrack = nowPlaying?.item;
-    const progressPct = nowTrack ? (nowPlaying.progress_ms / nowTrack.duration_ms) * 100 : 0;
+    const nowTrack = nowPlaying?.is_playing ? nowPlaying?.item : null;
+
+    const progressPct =
+        nowTrack && nowPlaying?.progress_ms
+            ? (nowPlaying.progress_ms / nowTrack.duration_ms) * 100
+            : 0;
 
     return (
         <div className="min-h-screen bg-black text-zinc-400 selection:bg-[#1ED760]/30">
