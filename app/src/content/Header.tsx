@@ -1,6 +1,7 @@
 "use client";
 
 import List from "@/components/List";
+import Menu from "@/components/Menu";
 import Link from "next/link";
 
 export default function Header() {
@@ -68,11 +69,9 @@ export default function Header() {
                 />
             </nav>
 
-            {/* ELEMENTO DECORATIVO MOBILE */}
-            {/* <div className="md:hidden flex flex-col gap-1.5 items-end">
-                <div className="w-8 h-[3px] bg-white"></div>
-                <div className="w-5 h-[3px] bg-[#1DB954]"></div>
-            </div> */}
+            <div className="md:hidden">
+                <Menu />
+            </div>
         </header>
     );
 }
