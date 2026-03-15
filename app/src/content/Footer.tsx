@@ -22,7 +22,7 @@ export default function Footer() {
 
                 {/* Copyright/Ano Minimalista */}
                 <span className="text-[9px] font-medium text-zinc-600 uppercase tracking-widest mt-4">
-                    © {new Date().getFullYear()} Spotify Analytics — All Rights Reserved.
+                    © {new Date().getFullYear()} Music Analytics — Todos os direitos reservados.
                 </span>
             </div>
         </footer>
