@@ -15,7 +15,7 @@ export default function FAQ() {
                     <h3 className="text-white font-medium text-lg mb-3 tracking-tight">Disponibilidade do Código-Fonte</h3>
                     <p className="text-zinc-400 text-sm leading-relaxed">
                         O repositório oficial é público e pode ser auditado no GitHub através do endereço:
-                        <a href="https://github.com/eded001/spotify-analytics" target="_blank" className="text-[#1DB954] ml-1 hover:underline">eded001/spotify-analytics</a>.
+                        <a href="https://github.com/eded001/spotify-analytics" target="_blank" className="text-[#1ED760] ml-1 hover:underline">eded001/spotify-analytics</a>.
                     </p>
                 </section>
 
@@ -23,7 +23,7 @@ export default function FAQ() {
                     <h3 className="text-white font-medium text-lg mb-3 tracking-tight">Integridade e Coleta de Dados</h3>
                     <p className="text-zinc-400 text-sm leading-relaxed">
                         A aplicação não utiliza cookies de rastreio ou armazenamento persistente de dados do usuário. Para conformidade técnica, consulte nossa seção de
-                        <a href="/privacy-policy" className="text-[#1DB954] ml-1 hover:underline">Privacidade</a>.
+                        <a href="/privacy-policy" className="text-[#1ED760] ml-1 hover:underline">Privacidade</a>.
                     </p>
                 </section>
             </Article>

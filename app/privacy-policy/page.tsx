@@ -1,7 +1,8 @@
-import {Article} from "@/components/ui/Article";
+import { Article } from "@/components/ui/Article";
+import { Button } from "@/components/ui/MyButton";
 import { Header, HeaderSubtitle, HeaderTitle } from "@/components/ui/Header";
 import { Layout } from "@/components/ui/Layout";
-import { Section, SectionContent, SectionSubtitle, SectionTitle } from "@/components/ui/Section";
+import { Section, SectionContent, SectionTitle } from "@/components/ui/Section";
 
 export default function PrivacyPolicy() {
     return (
@@ -27,17 +28,12 @@ export default function PrivacyPolicy() {
                 </Section>
 
                 <Section className="pt-6 border-t border-zinc-800">
-                    <p className="text-zinc-500 text-xs mb-4">Gestão de permissões de terceiros:</p>
-                    <button
-                        className="inline-block text-[10px] font-black text-black bg-white px-4 py-2 hover:bg-[#1DB954] transition-colors uppercase tracking-widest"
-                    >
-                        <a
-                            href="https://www.spotify.com/account/apps/"
-                            target="_blank"
-                        >
+                    <h1 className="text-zinc-500 text-xs mb-4">Gestão de permissões de terceiros:</h1>
+                    <Button>
+                        <a href="https://www.spotify.com/account/apps/" target="_blank" rel="noopener noreferrer">
                             Revogar Acesso via Spotify.com
                         </a>
-                    </button>
+                    </Button>
                 </Section>
             </Article>
         </Layout>

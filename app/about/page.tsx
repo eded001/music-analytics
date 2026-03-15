@@ -1,12 +1,11 @@
 import { Layout } from "@/components/ui/Layout"
 import { Header, HeaderSubtitle, HeaderTitle } from "@/components/ui/Header"
 import { Article } from "@/components/ui/Article"
-import { Section } from "@/components/ui/Section"
+import { Section, SectionContent, SectionTitle } from "@/components/ui/Section"
 
 export default function About() {
     return (
         <Layout>
-
             <Header>
                 <HeaderTitle>Sobre o Projeto</HeaderTitle>
                 <HeaderSubtitle>Documentação Institucional</HeaderSubtitle>
@@ -20,9 +19,8 @@ export default function About() {
                 </Section>
 
                 <Section className="grid md:grid-cols-2 gap-12 my-10 py-8 border-y border-zinc-800/50">
-
-                    <div>
-                        <Section.Subtitle>Referências</Section.Subtitle>
+                    <Article>
+                        <SectionTitle>Referências</SectionTitle>
 
                         <ul className="flex flex-col gap-2 text-sm">
                             <li>
@@ -37,16 +35,15 @@ export default function About() {
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </Article>
 
-                    <div>
-                        <Section.Subtitle>Stack Técnica</Section.Subtitle>
+                    <Article>
+                        <SectionTitle>Stack Técnica</SectionTitle>
 
-                        <Section.Content>
+                        <SectionContent>
                             Desenvolvido com React, Next.js e Tailwind CSS, integrando-se diretamente à infraestrutura da Spotify Web API.
-                        </Section.Content>
-                    </div>
-
+                        </SectionContent>
+                    </Article>
                 </Section>
 
                 <Section>
@@ -54,9 +51,7 @@ export default function About() {
                         Este projeto opera como um estudo de caso técnico para demonstração de conceitos de análise de dados e design de interface em tempo real.
                     </p>
                 </Section>
-
             </Article>
-
         </Layout>
     )
 }
