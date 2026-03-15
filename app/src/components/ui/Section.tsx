@@ -26,7 +26,7 @@ const sectionVariants: Record<SectionVariant, string> = {
 
 const titleVariants: Record<SectionTitleVariant, string> = {
     default: "text-white text-sm font-bold uppercase tracking-wider mb-4",
-    secondary: "text-[#1DB954] text-[10px] font-bold uppercase tracking-widest mb-4"
+    secondary: "text-[#1ED760] text-[10px] font-bold uppercase tracking-widest mb-4"
 }
 
 export function Section({
