@@ -119,7 +119,7 @@ export default function SpotifyStoryMinimal({ token }: { token: string }) {
                     </div>
                     <div className="text-right">
                         <p className="text-[8px] font-black uppercase tracking-widest leading-none">Spotify Analysis</p>
-                        <p className="text-[12px] font-black uppercase italic">#MyRecap2026</p>
+                        <p className="text-[12px] font-black uppercase italic">Made by Edgar Augusto</p>
                     </div>
                 </div>
             </div>
